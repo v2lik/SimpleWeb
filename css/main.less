@@ -14,10 +14,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: block;
 }
 
-body{
+body{   
 background:url(../img/back.jpg);
 background-position: center;
-min-width:815px;     
+min-width:815px;
+max-width:1920px;
 }
 
 @color-gray:#b0b0b0;
@@ -177,6 +178,13 @@ margin-top:43px;
                  color:#aaa;
                  text-decoration:none;
                  background:linear-gradient(#ececec, #fff);
+                    
+                background: #ececec; /* for non-css3 browsers */ 
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ececec', endColorstr='#fff'); /* для IE6-9 */
+                background: -webkit-linear-gradient(top, bottom, #fff, #ececec); /* для webkit-браузеров */
+                background: -moz-linear-gradient(top,  #ececec,  #fff); /* для firefox 3.6+ */ 
+                background: -o-linear-gradient(top,  #ececec,  #fff); /* для Opera 11.10+ */
+                background: -ms-linear-gradient(top,  #ececec,  #fff); /* для IE10+ */    
                  }
             
                 .stylish2{
@@ -200,6 +208,10 @@ margin-top:43px;
                  background:linear-gradient(#fff, #ececec);
                      img{
                         transform:rotate(180deg);
+                        -moz-transform:rotate(180deg);
+                        -ms-transform:rotate(180deg);
+                        -webkit-transform:rotate(180deg);
+                        -o-transform:rotate(180deg); 
                         position: relative;
                         padding-bottom: 11px;
                         padding-right: 13px;     
@@ -341,3 +353,11 @@ background:fadeout(#000, 50%);
 	border-right: 13px solid transparent;
 	border-top: 0px solid transparent;	
    }
+
+ a {
+    outline: none;
+    text-decoration: none; 
+   }
+
+A:visited {
+    color: #cecece;

@@ -34,6 +34,7 @@ body {
   background: url(../img/back.jpg);
   background-position: center;
   min-width: 815px;
+  max-width: 1920px;
 }
 .fonts {
   color: #fff;
@@ -269,6 +270,10 @@ table table table .stylish2 {
 }
 table table table .stylish2 img {
   transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
   position: relative;
   padding-bottom: 11px;
   padding-right: 13px;
@@ -448,4 +453,8 @@ footer .foot_links p {
   border-left: 1px solid rgba(0, 0, 0, 0.3);
   border-right: 13px solid transparent;
   border-top: 0px solid transparent;
+}
+a {
+  outline: none;
+  text-decoration: none;
 }

@@ -33,10 +33,11 @@ section {
 body {
   background: url(../img/back.jpg);
   background-position: center;
+  min-width: 815px;
 }
 .fonts {
   color: #fff;
-  font-family: Verdana;
+  font-family: Verdana, Geneva CY, DejaVu Sans, Sans-serif;
   font-size: 11.7px;
   margin-right: 2.8%;
   font-weight: normal;
@@ -44,17 +45,18 @@ body {
 }
 .content p {
   color: #fff;
-  font-family: Verdana;
+  font-family: Verdana, Geneva CY, DejaVu Sans, Sans-serif;
   font-size: 11.7px;
   margin-right: 2.8%;
   font-weight: normal;
   text-align: justify;
   font-size: 11.8px;
+  line-height: 1.6;
   color: #858585;
 }
 .content h3 {
   color: #fff;
-  font-family: Verdana;
+  font-family: Verdana, Geneva CY, DejaVu Sans, Sans-serif;
   font-size: 11.7px;
   margin-right: 2.8%;
   font-weight: normal;
@@ -63,17 +65,16 @@ body {
   font-size: 24px;
 }
 .top_links {
-  float: left;
   padding-top: 35px;
   position: absolute;
 }
+.top_links a:hover {
+  text-decoration: none;
+  color: #b0b0b0;
+}
 .top_links p {
-  color: #fff;
-  font-family: Verdana;
-  font-size: 11.7px;
-  margin-right: 2.8%;
+  font-family: Verdana, Geneva CY, DejaVu Sans, Sans-serif;
   font-weight: normal;
-  text-align: justify;
   font-size: 11px;
   color: #b0b0b0;
   margin-left: 7%;
@@ -82,9 +83,14 @@ body {
 }
 .click_battons {
   float: right;
-  color: #ffffff;
+  color: #fff;
   padding-top: 50px;
   font-size: 12px;
+}
+.click_battons img {
+  float: right;
+  margin-left: 50px;
+  padding-top: 3%;
 }
 .click_battons a {
   margin-left: 40px;
@@ -99,6 +105,15 @@ body {
   margin-right: -15px;
   background: linear-gradient(#0f8bbe, #0eb6fd);
   border-radius: 17px;
+}
+.click_battons p {
+  padding-top: 10%;
+  text-align: right;
+}
+.click_battons .down {
+  padding-top: 9%;
+  color: #b0b0b0;
+  text-align: right;
 }
 table {
   width: 100%;
@@ -115,13 +130,13 @@ table table {
 }
 table table .left_block {
   float: left;
-  border-right: 1px solid #b0b0b0;
+  border-right: 1px solid #ececec;
   width: 36.8%;
   padding-left: 1.5%;
 }
 table table .left_block ul {
   color: #fff;
-  font-family: Verdana;
+  font-family: Verdana, Geneva CY, DejaVu Sans, Sans-serif;
   font-size: 11.7px;
   margin-right: 2.8%;
   font-weight: normal;
@@ -133,27 +148,29 @@ table table .left_block ul {
   padding-left: 9%;
 }
 table table .left_block ul li {
-  border-bottom: 1px solid #b0b0b0;
-  padding-bottom: 3%;
-  padding-top: 3%;
+  border-bottom: 1px solid #e4e4e4;
+  padding-bottom: 2.6%;
+  padding-top: 2.6%;
   margin-right: 31%;
 }
 table table .left_block ul .under_line li {
+  margin-bottom: -6.5%;
   border: none;
 }
 table table .left_block p {
   color: #fff;
-  font-family: Verdana;
+  font-family: Verdana, Geneva CY, DejaVu Sans, Sans-serif;
   font-size: 11.7px;
   margin-right: 2.8%;
   font-weight: normal;
   text-align: justify;
   font-size: 11.8px;
+  line-height: 1.6;
   color: #858585;
 }
 table table .left_block h3 {
   color: #fff;
-  font-family: Verdana;
+  font-family: Verdana, Geneva CY, DejaVu Sans, Sans-serif;
   font-size: 11.7px;
   margin-right: 2.8%;
   font-weight: normal;
@@ -162,28 +179,33 @@ table table .left_block h3 {
   font-size: 24px;
 }
 table table .right_block {
+  margin-bottom: 39px;
   width: 61%;
   float: right;
 }
 table table .right_block p {
   color: #fff;
-  font-family: Verdana;
+  font-family: Verdana, Geneva CY, DejaVu Sans, Sans-serif;
   font-size: 11.7px;
   margin-right: 2.8%;
   font-weight: normal;
   text-align: justify;
   font-size: 11.8px;
+  line-height: 1.6;
   color: #858585;
 }
 table table .right_block h3 {
   color: #fff;
-  font-family: Verdana;
+  font-family: Verdana, Geneva CY, DejaVu Sans, Sans-serif;
   font-size: 11.7px;
   margin-right: 2.8%;
   font-weight: normal;
   text-align: justify;
   color: #0b81be;
   font-size: 24px;
+}
+table table .right_block p {
+  margin-bottom: 3.1%;
 }
 table table .right_block span {
   font-style: italic;
@@ -192,22 +214,84 @@ table table .right_block span {
 table table table {
   width: 97%;
   margin: 1.5%;
-  border-color: #b0b0b0;
-  min-height: 205px;
+  border-color: #ececec;
+}
+table table table .stylish {
+  position: absolute;
+  margin-top: 8%;
+  margin-left: -2.4%;
+  width: 38px;
+  height: 38px;
+  display: block;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -khtml-border-radius: 26px;
+  border: #fff 3px double;
+  font-size: 20px;
+  color: #888;
+  line-height: 38px;
+  text-shadow: 0 1px 0 #fff;
+  text-decoration: none;
+  text-align: center;
+  background: linear-gradient(#ffffff, #ececec);
+}
+table table table .stylish img {
+  position: relative;
+  padding-top: 9px;
+  padding-left: 11px;
+}
+table table table .stylish:hover {
+  border: #bbb 2px double;
+  color: #aaa;
+  text-decoration: none;
+  background: linear-gradient(#ececec, #ffffff);
+}
+table table table .stylish2 {
+  position: absolute;
+  margin-top: 8%;
+  margin-left: 85.5%;
+  width: 38px;
+  height: 38px;
+  display: block;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -khtml-border-radius: 26px;
+  border: #fff 3px double;
+  font-size: 20px;
+  color: #888;
+  line-height: 38px;
+  text-shadow: 0 1px 0 #fff;
+  text-decoration: none;
+  text-align: center;
+  background: linear-gradient(#ffffff, #ececec);
+}
+table table table .stylish2 img {
+  transform: rotate(180deg);
+  position: relative;
+  padding-bottom: 11px;
+  padding-right: 13px;
+}
+table table table .stylish2:hover {
+  border: #bbb 2px double;
+  color: #aaa;
+  text-decoration: none;
+  background: linear-gradient(#ececec, #ffffff);
 }
 table table table table {
   width: 98%;
   margin: 1%;
-  height: 190px;
   background: linear-gradient(to bottom left, #0f8dc3, #0eb5fb, #0f8dc3, #0eb5fb);
 }
 table table table table img {
+  margin-top: 3%;
   padding-left: 25px;
   float: left;
   padding-right: 1.1%;
 }
 table table table table h3 {
-  font-family: Verdana;
+  font-family: Verdana, Geneva CY, DejaVu Sans, Sans-serif;
   font-size: 11.7px;
   margin-right: 2.8%;
   font-weight: normal;
@@ -218,9 +302,150 @@ table table table table h3 {
 }
 table table table table p {
   color: #fff;
-  font-family: Verdana;
+  font-family: Verdana, Geneva CY, DejaVu Sans, Sans-serif;
   font-size: 11.7px;
   margin-right: 2.8%;
   font-weight: normal;
   text-align: justify;
+}
+table table table {
+  width: 97%;
+  margin: 1.5%;
+}
+table table table p {
+  color: #fff;
+  font-family: Verdana, Geneva CY, DejaVu Sans, Sans-serif;
+  font-size: 11.7px;
+  margin-right: 2.8%;
+  font-weight: normal;
+  text-align: justify;
+  font-size: 11.8px;
+  line-height: 1.6;
+  color: #858585;
+}
+table table table h3 {
+  color: #fff;
+  font-family: Verdana, Geneva CY, DejaVu Sans, Sans-serif;
+  font-size: 11.7px;
+  margin-right: 2.8%;
+  font-weight: normal;
+  text-align: justify;
+  color: #0b81be;
+  font-size: 24px;
+}
+table table table div {
+  margin: 4px;
+  padding-top: 27px;
+  padding-bottom: 30px;
+  background: linear-gradient(#ffffff, #ececec);
+}
+table table table div img {
+  float: left;
+  padding-left: 1.5%;
+}
+table table table div span {
+  float: right;
+  width: 83%;
+  margin-top: -1.6%;
+}
+table table table div p {
+  font-size: 12.1px;
+  border-right: 1px solid none;
+  margin: 1%;
+  padding-right: 2.5%;
+}
+table table table .clock {
+  float: left;
+  border-right: 1px solid #e4e4e4;
+  width: 48.6%;
+  padding-left: 1%;
+}
+table table table .coffee {
+  float: right;
+  width: 48.6%;
+}
+table table table .coffee span {
+  margin-top: -2%;
+  padding-bottom: 1px;
+  padding-left: 1px;
+}
+footer {
+  margin-top: 50px;
+  background: rgba(0, 0, 0, 0.5);
+}
+footer .line {
+  height: 1px;
+  width: 100%;
+  background: #000;
+}
+footer table {
+  color: #4a4a4a;
+  width: 100%;
+  margin-top: 1px;
+}
+footer .foot_links {
+  padding-top: 35px;
+  position: absolute;
+}
+footer .foot_links span {
+  color: #fff;
+  font-family: Verdana, Geneva CY, DejaVu Sans, Sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  margin-left: 5px;
+}
+footer .foot_links a:hover {
+  text-decoration: none;
+  color: #b0b0b0;
+}
+footer .foot_links p {
+  font-family: Verdana, Geneva CY, DejaVu Sans, Sans-serif;
+  font-weight: normal;
+  font-size: 11px;
+  color: #b0b0b0;
+  margin-left: 7%;
+  position: relative;
+  padding-left: 45px;
+}
+footer .foot_links p {
+  margin-top: -15%;
+}
+.block {
+  margin-top: 100px;
+  margin-bottom: 35px;
+  width: 30%;
+  margin-left: 5%;
+  border: 1px solid none;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+}
+.block p {
+  color: #fff;
+  font-family: Verdana, Geneva CY, DejaVu Sans, Sans-serif;
+  font-size: 11.7px;
+  margin-right: 2.8%;
+  font-weight: normal;
+  text-align: justify;
+  color: #b0b0b0;
+  padding-left: 6%;
+}
+.block .decor {
+  font-style: italic;
+  color: #0c7cb6;
+  font-size: 10px;
+  margin-top: 10%;
+  margin-bottom: -0.5%;
+}
+.block::after {
+  transform: rotate(-22deg);
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: -25px;
+  border: 28px solid rgba(0, 0, 0, 0.5);
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: 13px solid transparent;
+  border-top: 0px solid transparent;
 }

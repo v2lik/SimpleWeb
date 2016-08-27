@@ -33,7 +33,7 @@ section {
 body {
   background: url(../img/back.jpg);
   background-position: center;
-  min-width: 815px;
+  min-width: 740px;
   max-width: 1920px;
 }
 .fonts {
@@ -247,6 +247,18 @@ table table table .stylish:hover {
   color: #aaa;
   text-decoration: none;
   background: linear-gradient(#ececec, #ffffff);
+  background: #ececec;
+  /* for non-css3 browsers */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ececec', endColorstr='#fff');
+  /* для IE6-9 */
+  background: -webkit-linear-gradient(top, bottom, #ffffff, #ececec);
+  /* для webkit-браузеров */
+  background: -moz-linear-gradient(top, #ececec, #ffffff);
+  /* для firefox 3.6+ */
+  background: -o-linear-gradient(top, #ececec, #ffffff);
+  /* для Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ececec, #ffffff);
+  /* для IE10+ */
 }
 table table table .stylish2 {
   position: absolute;
@@ -457,4 +469,7 @@ footer .foot_links p {
 a {
   outline: none;
   text-decoration: none;
+}
+A:visited {
+  color: #cecece;
 }
